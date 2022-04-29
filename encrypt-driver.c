@@ -258,7 +258,6 @@ int main(int argc, char **argv) {
                 status = pthread_create(&threads[i], NULL, reader_th, NULL);
                 break;
             case 1:
-                printf("Creating Input Counter Thread: id=%d\n", i);
                 status = pthread_create(&threads[i], NULL, inCount_th, NULL);
                 break;
             case 2:
